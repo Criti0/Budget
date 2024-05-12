@@ -1,0 +1,230 @@
+﻿/* Stilizare navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asigură că navbarul va fi întotdeauna deasupra altor elemente */
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px gray;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+    .navbar a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+.navbar img {
+    max-height: 25%;
+}
+
+/* Stilizare container */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgb(200,148,132), rgb(231,186,139)); /* Stilizare background principal */
+    background-image: url('Calculator.png');
+    background-repeat: no-repeat;
+}
+
+.title {
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.container {
+    padding: 30px 40px;
+    border-radius: 10px 10px 30px 30px;
+    margin: 25px;
+    background-color: rgba(171, 218, 225,0.4); /* Stilizare container mic (buget) */
+}
+
+h1 {
+    letter-spacing: 2px;
+    margin: 0;
+    margin: 10px 0 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: azure;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: azure;
+}
+
+#balance {
+    color: azure;
+}
+
+.income-expense {
+    background-color: rgba(37, 78, 112,0.3); /* Stilizare container pentru inflow outflow balance */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+    .income-expense > div {
+        flex: 1;
+        text-align: center;
+    }
+
+.income,
+.expense,
+#balance {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.income {
+    color: azure;
+}
+
+.expense {
+    color: azure;
+}
+
+#balance {
+    color: azure;
+}
+
+.bg-dark {
+    background-color: transparent;
+    margin: 0 2px;
+    border-radius: 3px;
+}
+
+input[type="text"],
+input[type="number"] {
+    border:none;
+    border-radius: 1rem;
+    /* display: block; */
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    font-weight:bold;
+    outline: none;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    padding: 8px 0;
+    border-radius: 1rem;
+    outline: none;
+    background-color: rgb(37, 78, 112);
+    color: whitesmoke;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.delete-btn {
+    font-weight: bold;
+    border: none;
+    background-color: rgb(37, 78, 112); /* Stilizare cerc list */
+    border-radius: 1rem;
+    outline: none;
+    float: right;
+    margin-right: 5px;
+    width: 21px;
+    height: 21px;
+}
+    .delete-btn:hover {
+        font-weight: bold;
+        color: steelblue;
+        background-color: whitesmoke;
+    }
+    .btn:hover {
+        color: steelblue;
+        background-color: whitesmoke;
+    }
+
+
+
+
+ul {
+    list-style: none;
+    display: inline;
+}
+
+    ul li {
+        font-weight: bolder;
+        font-size: 21px;
+    }
+
+
+#error_msg {
+    color: azure;
+    background-color: rgba(37, 78, 112,0.5);
+    font-weight: bolder;
+    padding: 0 10px;
+    border-radius: 1rem;
+}
+
+.list {
+    color: azure;
+}
+
+.minus,
+.plus {
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgb(200,148,132);
+}
+
+    .minus:hover,
+    .plus:hover {
+        background-color: rgba(37, 78, 112,0.3);
+        border-radius:5px 5px 5px 5px;
+        cursor: pointer;
+        padding-left:5px;
+    }

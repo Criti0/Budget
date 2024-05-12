@@ -1,0 +1,44 @@
+﻿/* Stilizare navbar */
+.navbar {
+    font-family: "Montserrat", sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asigură că navbarul va fi întotdeauna deasupra altor elemente */
+    background-color: rgb(178,97,68);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px transparent;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+    .navbar a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+.navbar img {
+    max-height: 25%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,85 @@
+﻿/* indexStyle.css */
+
+::-webkit-scrollbar{
+    display: none;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    scroll-snap-type:y mandatory;
+    background-color: lightblue;
+    overflow-y:scroll;
+    height:94vh;
+}
+section{
+    height:94vh;
+    display:flex;
+    scroll-snap-align:start;
+}
+.one {
+    background-image: url('one.png');
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight:bolder;
+    align-content: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.two {
+    background-image: url('two.png');
+}
+.three {
+    background-image: url('three.png');
+}
+.four {
+    background-image: url('four.png');
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-image: linear-gradient(to right,rgb(41, 51, 92),rgb(34, 116, 165),rgb(34, 116, 165),rgb(34, 116, 165), rgb(41, 51, 92) );
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+    .navbar a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+.navbar img {
+    max-height: 25%;
+}
+
+
+
